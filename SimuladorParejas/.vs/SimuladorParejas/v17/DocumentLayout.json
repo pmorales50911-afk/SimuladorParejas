@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\GitHub\\SimuladorParejas\\SimuladorParejas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{04C604C3-CAA9-4A4B-A3EE-C0A21FDAD0A5}|SimuladorParejas\\SimuladorParejas.vcxproj|C:\\GitHub\\SimuladorParejas\\SimuladorParejas\\SimuladorParejas\\SimuladorParejas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{04C604C3-CAA9-4A4B-A3EE-C0A21FDAD0A5}|SimuladorParejas\\SimuladorParejas.vcxproj|solutionrelative:SimuladorParejas\\SimuladorParejas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SimuladorParejas.cpp",
+              "DocumentMoniker": "C:\\GitHub\\SimuladorParejas\\SimuladorParejas\\SimuladorParejas\\SimuladorParejas.cpp",
+              "RelativeDocumentMoniker": "SimuladorParejas\\SimuladorParejas.cpp",
+              "ToolTip": "C:\\GitHub\\SimuladorParejas\\SimuladorParejas\\SimuladorParejas\\SimuladorParejas.cpp",
+              "RelativeToolTip": "SimuladorParejas\\SimuladorParejas.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-06-08T04:06:28.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
