@@ -1,19 +1,143 @@
-// SimuladorParejas.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
-
 #include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
+
+// Simulador de parejas compatibles 
+
+class persona {
+public:
+
+    string Nombre;
+    int Edad;
+    string colorfav;
+    string musicafav;
+    string pasatiempofav;
+};
+
+void capturarDatos();
+void compatibilidad(int diferencia);
+
+
+class preguntas : public persona {
+public:
+
+    void capturarDatos() {
+
+        string colorfav, musicafav, pasatiempofav;
+
+        cout << "¿Cual es tu color favorito?" << endl;
+        cin >> colorfav;
+
+        cout << "¿Cual es tu musica favorita?" << endl;
+        cin >> musicafav;
+
+        cout << "Cual es tu pasatiempo favorito?" << endl;
+        cin >> pasatiempofav;
+    }
+};
+
+
+
+
+
+void compatibilidad(int diferencia) {
+   
+    if (diferencia <- 2)
+    {
+        cout << "compatibilidad Excelente (100%)";
+    }
+    else if (diferencia <- 5)
+    {
+        cout << "compatibilidad Buena (75%)";
+    }
+    else if (diferencia <- 10)
+    {
+      cout <<  "compatibilidad Regular (50%)";
+    }
+    else
+    {
+        cout << "compatibilidad Baja (25%)";
+    }
+   
+}
+
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
-}
+    persona persona1;
+    persona persona2;
 
-// Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
-// Depurar programa: F5 o menú Depurar > Iniciar depuración
+    cout << "Datos de la persona 1" << endl;
 
-// Sugerencias para primeros pasos: 1. Use la ventana del Explorador de soluciones para agregar y administrar archivos
-//   2. Use la ventana de Team Explorer para conectar con el control de código fuente
-//   3. Use la ventana de salida para ver la salida de compilación y otros mensajes
-//   4. Use la ventana Lista de errores para ver los errores
-//   5. Vaya a Proyecto > Agregar nuevo elemento para crear nuevos archivos de código, o a Proyecto > Agregar elemento existente para agregar archivos de código existentes al proyecto
-//   6. En el futuro, para volver a abrir este proyecto, vaya a Archivo > Abrir > Proyecto y seleccione el archivo .sln
+    cout << "Nombre" << endl;
+    cin >> persona1.Nombre;
+
+    cout << "Edad" << endl;
+    cin >> persona1.Edad;
+
+    // Preguntas persona 1
+
+    cout << "color favorito:";
+    cin >> persona1.colorfav;
+
+    cout << "musica favorita:";
+    cin >> persona1.musicafav;
+
+    cout << "pasatiempo favorito:";
+    cin >> persona1.pasatiempofav;
+
+    cout << "Datos de la persona 2" << endl;
+
+    cout << "Nombre:" << endl;
+    cin >> persona2.Nombre;
+
+    cout << "Edad:" << endl;
+    cin >> persona2.Edad;
+
+    // preguntas persona 2
+
+    cout << "color favorito:";
+    cin >> persona2.colorfav;
+
+    cout << "musica favorita:";
+    cin >> persona2.musicafav;
+
+    cout << "pasatiempo favorito:";
+    cin >> persona2.pasatiempofav;
+
+    int puntos = 0;
+
+    // comparar color
+    if (persona1.colorfav == persona2.colorfav)
+    {
+        puntos += 25;
+    }
+
+    // comparar musica
+    if (persona1.musicafav == persona2.musicafav)
+    {
+        puntos += 25;
+    }
+
+    // comparar pasatiempo
+    if (persona1.pasatiempofav == persona2.pasatiempofav)
+    {
+        puntos += 25;
+    }
+
+    // comparar edad
+    int diferencia = abs(persona1.Edad - persona2.Edad);
+
+    if (diferencia < -2)
+    {
+        puntos += 25;
+    }
+
+    cout << "porcentaje obtenido:" << puntos << "%" << endl;
+
+    compatibilidad(puntos);
+
+    return 0;
+};
